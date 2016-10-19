@@ -1,0 +1,24 @@
+<div class="container transbox">
+	<div id="detailsText">
+		<a href="#">Go Back</a>
+		<h1 id="details">Details</h1>
+		<h1 id="movieTitle" class="text-center">{{detail.movie.Title}}</h1>
+		<div id="detailsContent">
+		<div>
+			<img id="moviePoster" ng-src="{{detail.movie.Poster}}" width="250px">
+		</div>
+		<div id="detailsText">
+			<label>Plot</label>
+			<p>{{detail.movie.Plot}}</p>
+			<label>Director</label>
+			<p>{{detail.movie.Director}}</p>
+			<label> Runtime</label>
+			<p>{{detail.movie.Runtime}}</p>
+			<label>Rated</label>
+			<p>{{detail.movie.Rated}}</p>
+			<label>Year</label>
+			<p>Filmed in {{detail.movie.Year}}</p>
+		</div>
+	</div>
+	</div>
+</div>

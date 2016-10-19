@@ -1,0 +1,14 @@
+<h1 id="header">Movie Finder</h1>
+	<form ng-submit="search.movieSearch(search.stuff)">
+		<div id="input1" class="input-group input-group-lg">
+			<input type="text" class="form-control" placeholder="Enter a Movie" ng-model="search.stuff">
+			<span ng-click="search.movieSearch(search.stuff)" class="input-group-addon" type="btn">Search</span>
+		</div>
+	</form><br>
+
+	<div class="col-xs-12">
+		<div ng-repeat="movie in search.results.Search | limitTo : 6" id="results" class="col-xs-4" alt="No image available">
+					<div class="text-center"><a ui-sref="details({movietag: movie.Title})"><p id="searchTitle">{{movie.Title}}</p>
+					<img ng-src="{{movie.Poster}}" width="200px"></a></div>
+		</div>
+	</div>
